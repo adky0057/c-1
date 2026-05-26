@@ -1,0 +1,17 @@
+#include <stdio.h>
+int num1, num2;
+void inputNumbers() {
+	scanf("%d %d", &num1, &num2); }
+
+int main() 
+{
+	int sum;
+	inputNumbers();
+	
+	
+	sum = num1 + num2;
+
+	printf("%d + %d =%d \n", num1, num2, sum);
+	return 0;
+}
+    

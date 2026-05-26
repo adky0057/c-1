@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int addAndPrint(int i, int cj) {
+	cj = cj + i;
+	printf("The sum(0:%d) = %d\n", i , cj);
+	return cj;
+}
+
+int main(void){ 
+	int i, j;
+
+	for (i = 0, j = 0; i <= 10; i++){
+		j = addAndPrint(i, j);
+	}
+	return 0;
+}
+    
