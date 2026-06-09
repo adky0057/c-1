@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main(void)
+{
+ 	int set, i, j;
+    
+ 	printf("Enter lotto set number : ");
+ 	scanf("%d", &set);
+    
+ 	int lottonumber[set][6];
+ 	srand(time(NULL));
+    
+ 	for (i = 0; i < set; i++) {
+     		for (j = 0; j < 6; j++)
+			lottonumber[i][j] = rand() % 45 + 1;
+	printf("set %d :", i + 1);
+	for (j = 0; j < 6; j++)
+		printf(" %d", lottonumber[i][j]);
+	printf("\n");
+	}
+return 0;
+}

@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main(void)
+{
+ 	int lottonumber[6];
+ 	srand(time(NULL));
+ 	for (int i = 0; i < 6; i++)
+		lottonumber[i] = rand() % 45 + 1; 
+ 	for (int i = 0; i < 6; i++)
+        	printf("%d ", lottonumber[i]);
+ 	printf("\n");
+ return 0;
+}
